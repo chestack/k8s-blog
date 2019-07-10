@@ -24,4 +24,4 @@
 
 ## Docker
 
-- [`docker/rootfs`](docker/basic)
+- [`docker/basic`](docker/basic)
