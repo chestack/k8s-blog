@@ -1,7 +1,0 @@
-# rootfs
-
-# chroot
-
-# unshare
-
-# nsenter
