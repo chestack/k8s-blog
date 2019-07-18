@@ -16,7 +16,13 @@
 
 ## Kubernetes
 
-- [`k8s/kubelet`](kubernetes/kubelet)
+kubernetes是一个庞大的项目，需要分而治之，各个击破。按照社区的方式，可以拆分为: <br>
+- sub-project: controller-manager, apiserver, controller-manager
+- sig: sig-node, sig-network, sig-storage
+
+这里我们会按sub-project分类总结一些关键sub-project的基础知识/原理，以及相关的问题。
+
+- [`k8s/kubelet`](kubernetes/kubelet/README.md)
 - [`k8s/controller-manager`](kubernetes/controller-manager)
 
 ## etcd
