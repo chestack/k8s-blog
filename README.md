@@ -20,13 +20,15 @@ kubernetes是一个庞大的项目，需要分而治之，各个击破。按照�
 - sub-project: controller-manager, apiserver, controller-manager
 - sig: sig-node, sig-network, sig-storage
 
-这里我们会按sub-project分类总结一些关键sub-project的基础知识/原理，以及相关的问题。
+这里我们会按sub-project分类总结一些关键project的基础知识/原理，以及相关的生产问题。
 
-- [`k8s/kubelet`](kubernetes/kubelet/README.md)
+- [`k8s/kubelet`](kubernetes/kubelet)
 - [`k8s/controller-manager`](kubernetes/controller-manager)
 
 ## etcd
 
+- [`etcd/basic`](etcd/baisc)
+- [`etcd/断网恢复重新加入集群`](etcd/region)
 
 ## Docker
 
