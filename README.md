@@ -27,7 +27,7 @@ kubernetes是一个庞大的项目，需要分而治之，各个击破。按照�
 
 ## etcd
 
-- [`etcd/basic`](etcd/baisc)
+- [`etcd/basic`](etcd/basic)
 - [`etcd/断网恢复重新加入集群`](etcd/region)
 
 ## Docker
