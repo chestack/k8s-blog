@@ -18,12 +18,14 @@
 
 kubernetes是一个庞大的项目，需要分而治之，各个击破。按照社区的方式，可以拆分为: <br>
 - sub-project: controller-manager, apiserver, controller-manager
-- sig: sig-node, sig-network, sig-storage
+- sig: sig-node, sig-network, sig-storage，sig-cluster-lifecycle
 
 这里我们会按sub-project分类总结一些关键project的基础知识/原理，以及相关的生产问题。
 
 - [`k8s/kubelet`](kubernetes/kubelet)
 - [`k8s/controller-manager`](kubernetes/controller-manager)
+- [`k8s/apiserver`]
+- [`k8s/debug`]
 
 ## etcd
 
@@ -33,3 +35,15 @@ kubernetes是一个庞大的项目，需要分而治之，各个击破。按照�
 ## Docker
 
 - [`docker/basic`](docker/basic)
+
+
+## Flannel
+
+
+## Ceph
+
+
+## Operating System
+
+- [`os/shell`]
+- [`os/排查系统问题`]
