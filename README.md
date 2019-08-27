@@ -17,7 +17,8 @@
 
 ## 安装部署
 
-- [`kubespray`](kubespray)
+- [`deployment tools`](deployment)
+- [`kubespray`](deployment/kubespray)
 
 ## Kubernetes
 
