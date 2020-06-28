@@ -146,7 +146,9 @@ func doCmdAdd(args *skel.CmdArgs, n *NetConf, fenv *subnetEnv) error {
 
 - Delegate to bridge.cmdAdd() plugins/main/bridge/bridge.go
 ```$xslt
-
+func cmdAdd(args *skel.CmdArgs) error {
+    ...
+}
 ```
 - setupBridge(n), 配置网桥
 - setupVeth(netns, br, args.IfName, n.MTU, n.HairpinMode, n.Vlan)， 配置veth pairs
