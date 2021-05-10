@@ -82,7 +82,7 @@
   
   #PCI address 0000:04:00.0 is assigned to the hardware GPU device. 10de:15f8 is the device ID of the hardware GPU device.
 
-  $ echo 0000:04:00.0 > /sys/bus/pci/devices/0000:06:0d.0/driver/unbind
+  $ echo 0000:04:00.0 > /sys/bus/pci/devices/0000:04:00.0/driver/unbind
   $ echo 10de 15f8 > /sys/bus/pci/drivers/vfio-pci/new_id
   
   $ readlink -e /sys/bus/pci/devices/0000:04:00.0/iommu_group
