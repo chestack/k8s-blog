@@ -41,29 +41,29 @@ kubernetes是一个庞大的项目，需要分而治之，各个击破。按照�
 - [`k8s/debug`]
 
 
-## Container Runtime
+## 计算
 
-- [`梳理Container Runtime调用机制`](ContainerRuntime.md)
-- [`梳理CNI调用机制`](CNI.md)
+- [`CRI调用机制`](ContainerRuntime.md)
+- [`云原生GPU`](GPU.md)
+- [`安全容器设计概述`](ecr.md)
+
+## 网络
+- [`CNI调用机制`](network/CNI.md)
+- [`multus-cni/容器多网卡`](network/multiple-cni.md)
+
+
+## 存储
+
+
+## Operating System
+
 
 ## etcd
 
 - [`etcd/basic`](etcd/basic)
 - [`etcd/断网恢复重新加入集群`](etcd/region)
 
+
 ## Docker
 
 - [`docker/basic`](docker/basic)
-
-
-## network
-- [`net/multiple-cni`](network/multiple-cni.md)
-
-
-## Ceph
-
-
-## Operating System
-
-- [`os/shell`]
-- [`os/排查系统问题`]

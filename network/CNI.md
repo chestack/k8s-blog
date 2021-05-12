@@ -5,7 +5,7 @@ CNI负责解决Pod网络问题，Pod网络也是其k8s里其他网络的基础�
 
 #### 调用流程: kubelet-->CRI-->CNI-->network plugin
 
-![cni-call](pics/cni-process.png) 
+![cni-call](../pics/cni-process.png) 
 
 整体流程如上，调用过程相对简单，简单在Pod网络的setup过程是单机行为，不涉及分布式和网络的调用。<br>
 调用流程中涉及到的主要代码模块由蓝色框标出，按照先后顺序:
