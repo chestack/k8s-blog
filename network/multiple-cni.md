@@ -118,6 +118,9 @@ spec:
 
 - delete pod, 会调用几次 CNI cmdDelete? [[4]]
 
+- cni not working的情况下, delete Pod，Pod会处于什么状态 Terminating or Deleted？
+ 
+
 [1]: https://github.com/k8snetworkplumbingwg/multus-cni/blob/master/docs/configuration.md
 [2]: https://easystack.atlassian.net/browse/EAS-64028
 [3]: https://github.com/k8snetworkplumbingwg/multus-cni/issues/426
