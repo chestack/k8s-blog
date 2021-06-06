@@ -45,8 +45,7 @@
 
 ### kuryr-daemon 进程模型问题
 
-![kuryr-daemon](../pics/kuryr-daemon.png)  
-
+![kuryr-daemon](../pics/kuryr-daemon.png)
 
 ### kuryr-kubernetes operator 问题
 

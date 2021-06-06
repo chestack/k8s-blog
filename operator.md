@@ -1,5 +1,6 @@
 ## Operator Deep Dive
 
+- client-go/informer vs. k8s.io/code-generator vs. sample-controller vs. controller-runtime vs. kubebuilder
 
 - list-watch
   * python-client, requests 包, timeout配置[[3]]
@@ -56,7 +57,7 @@ kubectl get pods -n 75de16c57d5e48da9467de5f9dedcc16
 
 - operator HA
   * 是否存在AA模式？
-  * leader election sidecar [[14]], 耦合依赖sidecar
+  * leader election sidecar [[14]] 问题: kuryr-controller crash, leader-election work, 不会切换
   * controller-runtime 支持leader election [[15]] , 推荐!
 
 [3]: https://bugs.launchpad.net/kuryr-kubernetes/+bug/1842689
