@@ -59,6 +59,8 @@
 }
 ```
 
+### kube-ovn 峰会 FAQ [[8]]
+
 ### kube-ovn for kata
 
 - kata想找一个能简化当前kata网络链接拓扑, 提升网络性能的CNI: https://github.com/kubeovn/kube-ovn/issues/837
@@ -76,3 +78,4 @@
 [5]: https://github.com/kubeovn/kube-ovn#features
 [6]: https://github.com/kubernetes/kubernetes/issues/102613
 [7]: https://groups.google.com/g/kubernetes-sig-network/c/nIo6ffat7TI
+[8]: https://xie.infoq.cn/article/4b1a9c82be1318fd8cd823d3c
