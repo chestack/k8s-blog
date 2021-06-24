@@ -58,7 +58,7 @@ kubernetes是一个庞大的项目，需要分而治之，各个击破。按照�
 - [`云原生GPU`](kata-container/GPU.md)
 
 ## Operating System
-- [`进程-D vs Z vs orphan`](operating-system/process.md)
+- [`进程问题 -- D vs. Z vs. orphan`](operating-system/process.md)
 - [`iowait 高`](operating-system/iowait.md)
 - [`strace`](operating-system/strace.md)
 - [`systemtap`](operating-system/systemtap.md)
