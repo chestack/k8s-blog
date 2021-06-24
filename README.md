@@ -13,8 +13,8 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 
 ## 安装部署
 
-- [`deployment tools`](deployment)
-- [`kubespray`](deployment/kubespray)
+- [`deployment tools`](cluster-lifecycle)
+- [`kubespray`](cluster-lifecycle/kubespray)
 
 ## Kubernetes
 
@@ -26,39 +26,47 @@ kubernetes是一个庞大的项目，需要分而治之，各个击破。按照�
 
 - [`k8s/kubelet`](kubernetes/kubelet)
 - [`k8s/controller-manager`](kubernetes/controller-manager)
-- [`k8s/apiserver`]
-- [`k8s/debug`]
+
+## etcd
+- [`etcd/存储`](etcd/storage)
+- [`etcd/断网恢复重新加入集群`](etcd/rejoin)
 
 ## Operator
-
 - [`operator deep dive`](operator.md)
 
 ## 计算
-
 - [`docker/basic`](docker/basic)
 - [`CRI调用机制`](ContainerRuntime.md)
-- [`云原生GPU`](GPU.md)
-- [`安全容器设计概述`](ecr.md)
 
 ## 网络
 - [`CNI调用机制`](network/CNI.md)
 - [`multus-cni/容器多网卡`](network/multiple-cni.md)
 - [`kuryr-kubernetes`](network/kuryr.md)
 - [`kube-ovn`](network/kube-ovn.md)
-- [`kuryr-vs-kube-ovn`](network/kuryr-vs-kube-ovn.md)
+- [`kuryr-vs-kube-ovn`](network/cni-comparison.md)
 - [`DNS`](network/DNS.md)
 - [`ingress`](network/ingress.md)
 
 ## 存储
+- [`local-volume`](storage/local-volume.md)
+- [`mount-propagation`](storage/mount-propagation.md)
+- [`why-bind-mount`](storage/bind-mount.md)
+- [`ceph-rbd-问题排查`](storage/ceph-rbd.md)
 
+## kata-container
+- [`安全容器设计概述`](kata-container/ecr.md)
+- [`云原生GPU`](kata-container/GPU.md)
 
 ## Operating System
+- [`进程-D vs Z vs orphan`](operating-system/process.md)
+- [`iowait 高`](operating-system/iowait.md)
+- [`strace`](operating-system/strace.md)
+- [`systemtap`](operating-system/systemtap.md)
+- [`软中断`](operating-system/softirq.md)
 
+## SRE
 
-## etcd
-
-- [`etcd/basic`](etcd/basic)
-- [`etcd/断网恢复重新加入集群`](etcd/region)
+## golang
 
 *********************************
 # 广告位招租

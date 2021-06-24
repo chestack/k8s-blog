@@ -7,7 +7,7 @@
 
 ### 容器使用GPU: 依赖的工具及调用关系 [[1]]
 
-![nvidia-docker-arch](pics/nvidia-docker-arch.png) 
+![nvidia-docker-arch](../pics/nvidia-docker-arch.png) 
 
 #### 关键点:
 
@@ -18,9 +18,9 @@
 
 - OCI runtime-spec hooks [[14]][[15]]
 
-  ![oci-spec](pics/oci-spec.png)
+  ![oci-spec](../pics/oci-spec.png)
   
-  ![container-lifecycle](pics/container-lifecycle.png)
+  ![container-lifecycle](../pics/container-lifecycle.png)
    
   * nvidia-container-runtime, 调用runC 生成prestart hook指向nvidia-container-toolkit的config.json
   * 基于config.json, runC create container(namespace创建，network初始化) 
@@ -31,9 +31,9 @@
 
 ### Pod使用GPU: devcie-plugin [[4]]
 
-![k8s-device-plugin](pics/k8s-device-plugin.jpg) 
+![k8s-device-plugin](../pics/k8s-device-plugin.jpg) 
 
-![k8s-device-schedule](pics/k8s-device-schedule.jpg) 
+![k8s-device-schedule](../pics/k8s-device-schedule.jpg) 
 
 - github.com/NVIDIA/k8s-device-plugin 代码介绍 [[5]]
 - 待优化问题，device-plugin依赖default runtime配置为nvidia
@@ -54,7 +54,7 @@
 
 #### github.com/AliyunContainerService/gpushare-scheduler-extender [[6]]
 
-![ali-gpu-share](pics/ali-gpu-share.jpg) 
+![ali-gpu-share](../pics/ali-gpu-share.jpg) 
 
 - 目前ali-gpushare只实现了共享，没实现隔离. 保证节点GPU不超卖，但不保证单个container不多用
 - 隔离依赖nvidia本身功能: Nvidia vGPU、MPS，和vCUDA. 阿里云的cGPU支持隔离
@@ -65,9 +65,9 @@
 - GPU pass-through
   * Intel VT-d [[13]]，intel从硬件层面解决IO虚拟化的方案
   
-  ![Vfio-device-assignment-common](pics/Vfio-device-assignment-common.png)
+  ![Vfio-device-assignment-common](../pics/Vfio-device-assignment-common.png)
   
-  ![Vfio-device-assignment-viommu](pics/Vfio-device-assignment-viommu.png) 
+  ![Vfio-device-assignment-viommu](../pics/Vfio-device-assignment-viommu.png) 
   
   * IOMMU[[11]]: 虚机使用GPU的DMA，就是用户态qemu进程访问到主机上的内存,要保证DMA的安全性，DMA重映射.
     MMU，Intel的硬件内存管理单元，虚拟地址转换为物理地址。IOMMU的功能与MMU类似，不同的是它的使用这者不是CPU，而是IO设备，IOMMU因此得名
