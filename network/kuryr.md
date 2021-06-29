@@ -47,6 +47,8 @@
 
 ![kuryr-daemon](../pics/kuryr-daemon.png)
 
+- [`kuryr-daemon 孤儿进程问题`](../operating-system/process.md)
+
 ### kuryr-kubernetes operator 问题
 
 - [`Operator Deep Dive`](../operator.md)
