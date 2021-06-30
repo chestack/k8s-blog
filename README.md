@@ -12,18 +12,10 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 - 本文内容包括，每一部分的基础知识、原理、领域知识，以及工作中解决的具体问题。
 
 ## 安装部署
-
 - [`deployment tools`](cluster-lifecycle)
 - [`kubespray`](cluster-lifecycle/kubespray)
 
 ## Kubernetes
-
-kubernetes是一个庞大的项目，需要分而治之，各个击破。按照社区的方式，可以拆分为: <br>
-- sub-project: controller-manager, kube-apiserver, controller-manager
-- sig: sig-node, sig-network, sig-storage，sig-cluster-lifecycle
-
-这里我们会按sub-project分类总结一些关键project的基础知识/原理，以及相关的生产问题。
-
 - [`k8s/kubelet`](kubernetes/kubelet)
 - [`k8s/controller-manager`](kubernetes/controller-manager)
 
