@@ -61,9 +61,13 @@ PROCESS STATE CODES
 - dumb-init
   * simple process supervisor and init system designed to run as PID 1 inside container
   * 不用dumb-init, 容器业务进程就是PID 1, 可能导致两类问题 [[9]]:
-    * signals won't be handled properly: 举不出例子...
+    * signals won't be handled properly: 举不出例子... 这个好像是个例子 [[10]] 
     * responsible for wait()-ing on orphaned zombie processes: kuryr-daemon-cni
     * harbor的问题是另外一种场景, postgresql 本有能力作为PID 1 reap child processes, 但D了
+
+- busybox里看到很多ppid=0的进程, 当容器pid namespace内进程的父进程不在此pid namespace里时，那么ppid显示为0 。这里有两种情况[[11]]:
+  * 1、父进程为容器外部的进程，例如docker的主进程。
+  * 2、通过setns进入到namespace内部的进程。也就是docker exec注入到容器内部的进程。
 
 ## 常用命令
 
@@ -83,3 +87,5 @@ PROCESS STATE CODES
 [7]: https://easystack.atlassian.net/browse/EAS-74793
 [8]: https://github.com/svinota/pyroute2/issues/623
 [9]: https://github.com/Yelp/dumb-init#why-you-need-an-init-system
+[10]: https://easystack.atlassian.net/browse/ECS-4714
+[11]: https://developer.aliyun.com/article/672992
