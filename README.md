@@ -54,7 +54,6 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 - [`iowait 高`](operating-system/iowait.md)
 - [`strace`](operating-system/strace.md)
 - [`systemtap`](operating-system/systemtap.md)
-- [`软中断`](operating-system/softirq.md)
 
 ## SRE
 
