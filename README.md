@@ -20,8 +20,8 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 - [`k8s/controller-manager`](kubernetes/controller-manager)
 
 ## etcd
-- [`etcd/存储`](etcd/storage)
-- [`etcd/断网恢复重新加入集群`](etcd/rejoin)
+- [`etcd/存储`](etcd/storage.md)
+- [`etcd/断网恢复重新加入集群`](etcd/rejoin.md)
 
 ## Operator
 - [`operator deep dive`](operator.md)
@@ -46,7 +46,13 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 - [`ceph-rbd-问题排查`](storage/ceph-rbd.md)
 
 ## kata-container
-- [`安全容器设计概述`](kata-container/ecr.md)
+- [`安全容器简介`](kata-container/kata-container.md)
+- [`安全容器技术门槛-虚拟化`](kata-container/virtualization.md)
+- [`安全容器云产品设计概述`](kata-container/ecr.md)
+- [`安全容器-启动过程`](kata-container/startup.md)
+- [`安全容器-网络`](kata-container/network.md)
+- [`安全容器-存储`](kata-container/storage.md)
+- [`安全容器-资源管理`](kata-container/resource.md)
 - [`云原生GPU`](kata-container/GPU.md)
 
 ## Operating System
