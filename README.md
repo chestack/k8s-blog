@@ -43,16 +43,16 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 - [`local-volume`](storage/local-volume.md)
 - [`mount-propagation`](storage/mount-propagation.md)
 - [`why-bind-mount`](storage/bind-mount.md)
-- [`ceph-rbd-问题排查`](storage/ceph-rbd.md)
+- [`ceph-rbd 问题排查`](storage/ceph-rbd.md)
 
 ## kata-container
-- [`安全容器简介`](kata-container/kata-container.md)
-- [`安全容器技术门槛-虚拟化`](kata-container/virtualization.md)
-- [`安全容器云产品设计概述`](kata-container/ecr.md)
-- [`安全容器-启动过程`](kata-container/startup.md)
-- [`安全容器-网络`](kata-container/network.md)
-- [`安全容器-存储`](kata-container/storage.md)
-- [`安全容器-资源管理`](kata-container/resource.md)
+- [`kata简介`](kata-container/kata-container.md)
+- [`kata技术门槛-虚拟化`](kata-container/virtualization.md)
+- [`kata-启动过程`](kata-container/startup.md)
+- [`kata-网络`](kata-container/network.md)
+- [`kata-存储`](kata-container/storage.md)
+- [`kata-资源管理`](kata-container/resource.md)
+- [`安全容器云产品设计概述`](kata-container/ecr.md)  
 - [`云原生GPU`](kata-container/GPU.md)
 
 ## Operating System
