@@ -9,13 +9,13 @@
 
 ### IO虚拟化介绍 [[4]]
 
-虚拟化技术发展主要方向是解决CPU、内存虚拟化, IO虚拟化也是很关键的问题.
+虚拟化技术发展主线是解决CPU、内存虚拟化问题; 其次重要的就是IO虚拟化问题, 也衍生出如下分类
 
 ![io-virtualization](../pics/io-virtualization.jpeg)
 
 ### virtio [[3]]
 
-- why? IO操作由 QEMU 进行模拟，如上面介绍的全软件模拟效率不高，可以在Guest中使用半虚拟化驱动提升IO性能
+- why? 如上面全虚拟化介绍，如果IO操作全由QEMU拟效率不高，可以在Guest中使用半虚拟化驱动提升IO性能
 - what？IO半虚拟化通用方案, Guest需要知道自己运行在虚拟化环境中，进而根据Virtio标准和Hypervisor协作，从而提高IO性能。目前主流Linux和windows都支持virtio。
 - how?
   * 前端driver 位于Guest 内核的驱动程序模块
@@ -24,8 +24,8 @@
     
 ![virtio-arch](../pics/virtio-architecture.gif)
 
-- 不同的IO设备/需求,对应不同的virtio模块
-  * virtio_net[[7]]是虚拟以太网卡, 是virtio迄今为止支持的最复杂的设备, 随着技术发展后端driver的实现又包括: vhost-net、vhost-user. 这里不会再介绍模块具体内容了, 内容太多了而且确实不懂
+- 不同的IO设备虚拟化需求 对应不同的virtio模块:
+  * virtio_net[[7]], 是虚拟以太网卡, 是virtio迄今为止支持的最复杂的设备, 随着技术发展后端driver的实现又包括: vhost-net、vhost-user. 这里不会再介绍模块具体内容了, 内容太多了而且确实不懂
   * virtio_fs 
   * vsock 
   * virtio-blk
@@ -41,7 +41,7 @@
 ### SR-IOV
 
 - 一个物理设备(PF)拆分成多个VF，将VF pass-through VMM 到Guest
-- vfio vs. SR-IOV [[6]]
+- vfio vs. SR-IOV [[6]], 解决使用vfio设备被单个实例独占的问题
 
 [1]: https://github.com/kata-containers/kata-containers/blob/main/docs/design/virtualization.md
 [2]: https://hurray0.com/menu/50/
