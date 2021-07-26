@@ -58,6 +58,8 @@
   * 多块GPU卡(large bar space)挂载问题 [[13]]
   * [`云原生GPU`](./GPU.md)
   
+- how to debug
+
 [1]: https://medium.com/kata-containers/the-two-years-of-kata-containers-ac0b51caf1ff
 [2]: https://mp.weixin.qq.com/s?__biz=MzUzOTk2OTQzOA==&mid=2247483874&idx=1&sn=cdc118f8c76a6bed6a6bd15153f5cb10&chksm=fac11313cdb69a055a2a200883b348a30f4d80f219b2f33a628efeccbfd6fd54efc7f7706f93&scene=21#wechat_redirect
 [3]: https://mp.weixin.qq.com/s?__biz=MzUzOTk2OTQzOA==&mid=2247483911&idx=1&sn=28eb395482fd7e6835b3fd6f1e5af3a0&chksm=fac110f6cdb699e02d9d7ae6d2197183fb5d9415f0624c0e47fbb24dba3a26ef4a6184fcfb53&scene=21#wechat_redirect
