@@ -2,7 +2,7 @@
 
 |  | kube-ovn  | kuryr-kubernetes | calico | cilium |  flannel |
 |  ----  | ----  | ----  | ----  | ----  | ----  | 
-| 网络模式 | geneve vlan | 依赖neutron 网络 | vxlan/IPIP  BGP | vxlan/geneve  BGP | vxlan  host-gw |
+| 网络模式 | geneve vlan | 依赖neutron 网络模式 | vxlan/IPIP  BGP | vxlan/geneve  BGP | vxlan  host-gw |
 | 租户网络隔离  | 支持  | 支持 | 不支持 |  不支持 | 不支持 |
 | network policy  | 支持  | 支持 | 支持 |  支持 | 不支持 |
 | 固定IP | 支持  | 不支持 | 支持[[1]] |  不支持 | 不支持 |

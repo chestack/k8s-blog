@@ -31,11 +31,12 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 - [`CRI调用机制`](ContainerRuntime.md)
 
 ## 网络
+- [`网络基础`](network/network-basic.md)
 - [`CNI调用机制`](network/CNI.md)
 - [`multus-cni/容器多网卡`](network/multiple-cni.md)
 - [`kuryr-kubernetes`](network/kuryr.md)
 - [`kube-ovn`](network/kube-ovn.md)
-- [`kuryr-vs-kube-ovn`](network/cni-comparison.md)
+- [`cni-comparison`](network/cni-comparison.md)
 - [`DNS`](network/DNS.md)
 - [`ingress`](network/ingress.md)
 
@@ -47,7 +48,7 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 
 ## kata-container
 - [`kata简介`](kata-container/kata-container.md)
-- [`kata技术门槛-虚拟化`](kata-container/virtualization.md)
+- [`kata-虚拟化`](kata-container/virtualization.md)
 - [`kata-启动过程`](kata-container/startup.md)
 - [`kata-网络`](kata-container/network.md)
 - [`kata-存储`](kata-container/storage.md)

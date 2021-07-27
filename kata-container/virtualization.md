@@ -25,7 +25,8 @@
 ![virtio-arch](../pics/virtio-architecture.gif)
 
 - 不同的IO设备虚拟化需求 对应不同的virtio模块:
-  * virtio_net[[7]], 是虚拟以太网卡, 是virtio迄今为止支持的最复杂的设备, 随着技术发展后端driver的实现又包括: vhost-net、vhost-user. 这里不会再介绍模块具体内容了, 内容太多了而且确实不懂
+  * virtio_net[[7]]是虚拟以太网卡, 是virtio迄今为止支持的最复杂的设备
+    * virtio网络的演化之路: virtio ---> vhost-net ---> vhost-user [[8]]
   * virtio_fs 
   * vsock 
   * virtio-blk
@@ -50,3 +51,4 @@
 [5]: https://www.linux-kvm.org/page/10G_NIC_performance:_VFIO_vs_virtio
 [6]: https://www.juniper.net/documentation/en_US/junos/topics/concept/disaggregated-junos-virtio-sr-iov.html
 [7]: https://lockless.github.io/2020/03/23/Introduction%20to%20virtio-networking%20and%20vhost-net/
+[8]: https://mp.weixin.qq.com/s/xRVDVn2EkQjHR7b-XpDMBw
