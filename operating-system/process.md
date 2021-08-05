@@ -12,6 +12,7 @@ PROCESS STATE CODES
     W    paging (not valid since the 2.6.xx kernel)
     X    dead (should never be seen)
     Z    defunct ("zombie") process, terminated but not reaped by its parent
+    I    idle, was introduced in version 4.14 of the Linux kernel
 ```
 
 - 状态机 [[3]]
@@ -54,7 +55,7 @@ PROCESS STATE CODES
   * the orphaned child process is adopted by init (process ID 1)
   * An orphan is just a process. It will use whatever resources it uses  
   * 父进程exit 不会kill子进程吗？-- 应该发了signal，但子进程不一定能结束
-    * kuryr-daemon-cni: flask作为父进程, 执行setup操作通过python启动子进程
+    * kuryr-daemon-cni: flask作为父进程, 执行network setup操作通过python启动子进程
     * 子进程使用的pyroute2包有问题, 没有释放netns FD，导致父进程退出时, 子进程不会退出变为orphan process [[8]]
     * 节点上反复创建Pods，导致大量orphan process残留, 导致Pod oom [[6]]
     

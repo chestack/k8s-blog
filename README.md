@@ -58,7 +58,7 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 
 ## Operating System
 - [`进程问题 -- D vs. Z vs. orphan`](operating-system/process.md)
-- [`iowait 高`](operating-system/iowait.md)
+- [`system-slowness`](operating-system/system-slowness.md)
 - [`strace`](operating-system/strace.md)
 - [`systemtap`](operating-system/systemtap.md)
 
