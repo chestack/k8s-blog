@@ -1,6 +1,6 @@
 ## 网络包接收过程
 
-### 文档原因 -- "理解了实现再谈网络性能" [[1]]
+### 文档原因 -- "理解了实现 再谈网络性能" [[1]]
  - 目标: 容器网络性能优化
  - 路径: 基础网络包 发送/接收路径 --> 基于kube-ovn做CNI的网络包 发送/接收路径 --> 搞清路径才能搞清性能瓶颈点 --> 有针对性优化
 
@@ -138,7 +138,7 @@ static int __netif_receive_skb_core(struct sk_buff *skb, bool pfmemalloc)
 
 - ovs 流表规则在哪里生效，是否需要进入host network ns
   - ovs里 ```type: internal``` 这种type的interface 在host上是能看到的，像 ovn0、br-mgmt这些设备，只有这些设备可以接入host network kernel stack的设备
-  - 像vm的 tag设备，container 的veth设备 是不会接入network kernel stack的？(kube-ovn pod 访问svc 只能通过 ovn的 LB rule？) kube-ovn support [internal port](https://github.com/kubeovn/kube-ovn/wiki/%E4%BD%BF%E7%94%A8ovs-internal-port-%E5%AE%9E%E7%8E%B0Pod-NIC) 又是为了啥
+  - 像vm的 tap设备，container 的veth设备 是不会接入network kernel stack的？(kube-ovn pod 访问svc 只能通过 ovn的 LB rule？) kube-ovn support [internal port](https://github.com/kubeovn/kube-ovn/wiki/%E4%BD%BF%E7%94%A8ovs-internal-port-%E5%AE%9E%E7%8E%B0Pod-NIC) 又是为了啥
 
 - dpdk/ovs-dpdk 规则在哪里生效
   - dpdk是完全的 kernel bypass, 都交到userspace做事情, [dpdk](https://mp.weixin.qq.com/s?__biz=MzkyMTIzMTkzNA==&mid=2247523649&idx=1&sn=5bcdd0efff2d2322df4af877ea61bfcd&chksm=c1846a10f6f3e3061cb336a623a28ec04cedb002f5bf5293175412b0973119d4625fac868870&cur_album_id=1843108380194750466&scene=190#rd) 是个大topic
