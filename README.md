@@ -14,6 +14,7 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 ## 安装部署
 - [`deployment tools`](cluster-lifecycle)
 - [`kubespray`](cluster-lifecycle/kubespray)
+- [`cluster-api`](cluster-lifecycle/cluster-api)
 
 ## Kubernetes
 - [`k8s/kubelet`](kubernetes/kubelet)
@@ -58,6 +59,8 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 - [`kata-资源管理`](kata-container/resource.md)
 - [`安全容器云产品设计概述`](kata-container/ecr.md)  
 - [`云原生GPU`](kata-container/GPU.md)
+
+## kubevirt
 
 ## Operating System
 - [`进程问题 -- D vs. Z vs. orphan`](operating-system/process.md)
