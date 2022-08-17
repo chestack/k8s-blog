@@ -33,14 +33,16 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 
 ## 网络
 - [`Linux网络包接收过程`](network/RX.md)
-- [`Linux网络包发送过程`](network/TX.md)  
+- [`Linux网络包发送过程`](network/TX.md)
+- [`虚机中的网络`](network/network-in-vm.md)
 - [`网络基础`](network/network-basic.md)
 - [`CNI调用机制`](network/CNI.md)
 - [`multus-cni/容器多网卡`](network/multiple-cni.md)
 - [`kuryr-kubernetes`](network/kuryr.md)
-- [`ovs/ovn`](network/ovn.md)  
+- [`ovs/ovn`](network/ovn.md)
 - [`kube-ovn`](network/kube-ovn.md)
 - [`cni-comparison`](network/cni-comparison.md)
+- [`LoadBalancer`](network/lb.md)
 - [`DNS`](network/DNS.md)
 - [`ingress`](network/ingress.md)
 
