@@ -38,6 +38,7 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 - [`网络基础`](network/network-basic.md)
 - [`CNI调用机制`](network/CNI.md)
 - [`multus-cni/容器多网卡`](network/multiple-cni.md)
+- [`容器使用SR-IOV网卡`](network/sriov.md)
 - [`kuryr-kubernetes`](network/kuryr.md)
 - [`ovs/ovn`](network/ovn.md)
 - [`kube-ovn`](network/kube-ovn.md)
