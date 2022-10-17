@@ -62,6 +62,7 @@ k8s平台整个技术栈包含从上面的应用到下面的硬件，是一个�
 - [`kata-资源管理`](kata-container/resource.md)
 - [`安全容器云产品设计概述`](kata-container/ecr.md)  
 - [`云原生GPU`](kata-container/GPU.md)
+- [`kata block volume 热插拔`](kata-container/hot-plug.md)
 
 ## kubevirt
 
