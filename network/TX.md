@@ -108,6 +108,10 @@ esp-tx-csum-hw-offload: off [fixed]
 rx-udp_tunnel-port-offload: off [fixed]
 tls-hw-tx-offload: off [fixed]
 ```
+
+- 可以看到，我们的EKS VM ```tx-udp_tnl-segmentation: off [fixed]``` 而 host上是 on，这个原因是 virtio-net 驱动里默认就是 off
+- 对比了阿里云的VM，这个配置也是off，但是转发能力(pps)很强，所以 这部分就需要提升host上 ovn/ovs的转发能力(pps)了
+
 ### 性能优化思路
 
 了解了RX、TX的原理, 性能优化就有的放矢了, 但性能优化是没有通用手段的
