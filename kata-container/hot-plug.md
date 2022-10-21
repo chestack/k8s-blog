@@ -48,16 +48,24 @@ ecr-runtime block-volume hot-plug --sandbox <sid> --container <cid> --block-volu
 - agent in guest
   * ```setns(mnt_fd, 0); mknod_dev(&dev, path)```
   * 坑1，rust unsafe，有效帮助: strace 有助于发现系统调用的问题.
-  * 坑2，setns 不能associate mnt_namespace [[6]], 有效帮助 manual page 内容详实. 
+  * 坑2，setns 不能associate mnt_namespace [[5]], 有效帮助 manual page 内容详实. 
 
 - 好物推荐: [manual page](https://www.kernel.org/doc/man-pages/) 很好用
   * 清晰列出 user commands, system calls, rust libc库都是源于manual page
   * 解释了 nsenter == setns + clone
   * 阐述了 fork vs clone
+  * 操作系统 vs. 云操作系统 类比 [[6]] [[7]]
     
+    | Linux | kubernetes |
+    | :-----| ----: | 
+    | shell | kubectl |
+    | glibc | client-go |
+    | systemcall | k8s API |
 
 [1]: https://terenceli.github.io/%E6%8A%80%E6%9C%AF/2021/12/23/runc-internals-2
 [2]: https://juejin.cn/post/6903527508784873485
 [3]: https://medium.com/swlh/grpc-fundamental-and-concept-93414d7956df
 [4]: https://thenewstack.io/grpc-a-deep-dive-into-the-communication-pattern/
-[6]: https://man7.org/linux/man-pages/man2/setns.2.html
+[5]: https://man7.org/linux/man-pages/man2/setns.2.html
+[6]: https://medium.com/meatandmachines/what-really-happens-when-you-type-ls-l-in-the-shell-a8914950fd73
+[7]: https://cloud.tencent.com/developer/article/1357674
