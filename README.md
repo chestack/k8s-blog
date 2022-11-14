@@ -9,24 +9,6 @@
 
 ![k8s-stacks](pics/k8s-stacks-v2.png)
 
-
-## k8s 安装部署升级
-- [`deployment tools`](cluster-lifecycle)
-- `kubespray (TODO)`
-- `cluster-api (TODO)`
-
-## kubernetes
-- [`kubelet 启动流程`](kubernetes/kubelet/startup.md)
-- [`operator deep dive`](kubernetes/operator.md)
-
-## etcd
-- [`etcd/存储`](etcd/storage.md)
-- [`etcd/断网恢复重新加入集群`](etcd/rejoin.md)
-
-## 计算
-- [`docker/basic`](docker/basic)
-- [`CRI调用机制`](ContainerRuntime.md)
-
 ## 网络
 - [`Linux网络包接收过程`](network/RX.md)
 - [`Linux网络包发送过程`](network/TX.md)
@@ -39,26 +21,48 @@
 - [`ovs/ovn`](network/ovn.md)
 - [`kube-ovn`](network/kube-ovn.md)
 - [`cni-comparison`](network/cni-comparison.md)
+- `vpc CNI (TODO)`  
 - `LoadBalancer (TODO)`
-- `DNS (TODO)`
 - `multiple ingress-controller (TODO)`
+- `coreDNS localdns  (TODO)`
+
+## 计算
+- [`docker/basic`](docker/basic)
+- [`CRI调用机制`](ContainerRuntime.md)
+- `what is containerd snapshot (TODO)`
+- `deep dive container image (TODO)`
 
 ## kata-container
 - [`kata简介`](kata-container/kata-container.md)
-- [`安全容器云产品设计概述`](kata-container/ecr.md)  
+- [`安全容器云产品设计概述`](kata-container/ecr.md)
 - [`云原生GPU`](kata-container/GPU.md)
 - [`kata-虚拟化`](kata-container/virtualization.md)
 - [`kata block volume 热插拔`](kata-container/hot-plug.md)
 
+## 存储
+- `bind mount, mount propagation (TODO)`
+- `rbd intree migrate to ceph csi (TODO)`
+- `CSI 0 to 1 (TODO)`
+
+## kubernetes
+- [`kubelet 启动流程`](kubernetes/kubelet/startup.md)
+- [`operator deep dive`](kubernetes/operator.md)
+- `deep dive list-watch (TODO)`
+- `大规模集群的挑战 (TODO)`
+
+## etcd
+- [`etcd/存储`](etcd/storage.md)
+- [`etcd/断网恢复重新加入集群`](etcd/rejoin.md)
 
 ## Operating System
 - [`进程问题 -- D vs. Z vs. orphan`](operating-system/process.md)
 - [`system-slowness`](operating-system/system-slowness.md)
 
+## k8s 安装部署升级
+- [`deployment tools`](cluster-lifecycle)
+- `cluster-api (TODO)`
 
-## 存储
 ## SRE
-## kubevirt
 ## golang
 ## rust
 
