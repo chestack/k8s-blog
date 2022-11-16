@@ -39,14 +39,10 @@
 - [`kata-虚拟化`](kata-container/virtualization.md)
 - [`kata block volume 热插拔`](kata-container/hot-plug.md)
 
-## 存储
-- `bind mount, mount propagation (TODO)`
-- `rbd intree migrate to ceph csi (TODO)`
-- `CSI 0 to 1 (TODO)`
-
 ## kubernetes
 - [`kubelet 启动流程`](kubernetes/kubelet/startup.md)
 - [`operator deep dive`](kubernetes/operator.md)
+- [`kube-apiserver 无法启动 故障分析`](kubernetes/kube-apiserver-start.md)  
 - `deep dive list-watch (TODO)`
 - `大规模集群的挑战 (TODO)`
 
@@ -61,6 +57,11 @@
 ## k8s 安装部署升级
 - [`deployment tools`](cluster-lifecycle)
 - `cluster-api (TODO)`
+
+## 存储
+- `bind mount, mount propagation (TODO)`
+- `rbd intree migrate to ceph csi (TODO)`
+- `CSI 0 to 1 (TODO)`
 
 ## SRE
 ## golang
