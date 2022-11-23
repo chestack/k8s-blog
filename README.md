@@ -42,9 +42,9 @@
 ## kubernetes
 - [`kubelet 启动流程`](kubernetes/kubelet/startup.md)
 - [`operator deep dive`](kubernetes/operator.md)
-- [`kube-apiserver 无法启动 故障分析`](kubernetes/kube-apiserver-start.md)  
-- `deep dive list-watch (TODO)`
-- `大规模集群的挑战 (TODO)`
+- [`kube-apiserver crash 故障分析`](kubernetes/kube-apiserver-crash.md)
+- [`kube-apiserver pprof 性能分析`](kubernetes/kube-apiserver-pprof.md)
+- [`kube-apiserver 简述`](kubernetes/kube-apiserver.md)
 
 ## etcd
 - [`etcd/存储`](etcd/storage.md)
