@@ -21,7 +21,7 @@
 - [`ovs/ovn`](network/ovn.md)
 - [`kube-ovn`](network/kube-ovn.md)
 - [`cni-comparison`](network/cni-comparison.md)
-- `vpc CNI (TODO)`  
+- [`vpc CNI`](network/vpc-cni.md)
 - `LoadBalancer (TODO)`
 - `multiple ingress-controller (TODO)`
 - `coreDNS localdns  (TODO)`
@@ -63,6 +63,7 @@
 - `rbd intree migrate to ceph csi (TODO)`
 - `CSI 0 to 1 (TODO)`
 
+## Service Mesh
 ## SRE
 ## golang
 ## rust
