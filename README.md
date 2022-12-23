@@ -26,12 +26,6 @@
 - `multiple ingress-controller (TODO)`
 - `coreDNS localdns  (TODO)`
 
-## 计算
-- [`docker/basic`](docker/basic)
-- [`CRI调用机制`](ContainerRuntime.md)
-- `what is containerd snapshot (TODO)`
-- `deep dive container image (TODO)`
-
 ## kata-container
 - [`kata简介`](kata-container/kata-container.md)
 - [`安全容器云产品设计概述`](kata-container/ecr.md)
@@ -45,6 +39,13 @@
 - [`kube-apiserver crash 故障分析`](kubernetes/kube-apiserver-crash.md)
 - [`kube-apiserver pprof 性能分析`](kubernetes/kube-apiserver-pprof.md)
 - [`kube-apiserver 简述`](kubernetes/kube-apiserver.md)
+
+## 计算
+- [`docker/basic`](docker/basic)
+- [`CRI调用机制`](compute/ContainerRuntime.md)
+- [`容器如何设置内核参数`](compute/sysctls.md)
+- `deep drive container image (TODO)`
+- `what is containerd snapshot (TODO)`
 
 ## etcd
 - [`etcd/存储`](etcd/storage.md)

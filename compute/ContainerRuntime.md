@@ -20,7 +20,7 @@ Container Runtime确实没有明确的定义，不想CRI、OCI这些明确的spe
 
 先来一张整体调用关系图(黄色表示daemon，绿色表示二进制可执行文件)
 
-![cri-call](pics/cri-call-process.jpg) 
+![cri-call](../pics/cri-call-process.jpg) 
 
 如上图，组件间调用过程gRPC出现频率很高，所以先说说什么是gRPC。<br>
 gRPC helloworld [[2]]，没有比官网的helloworld更好的例子了。一些理解：
@@ -77,7 +77,7 @@ type RemoteRuntimeService struct {
 - 稳定性问题，解决之前产品中出现的dockerd和containerd之间状态不一致问题
 - 作为开源社区 containerd要比Moby看起来更靠谱，也更有未来
 
- ![containerd](pics/containerd.jpg) 
+ ![containerd](../pics/containerd.jpg) 
  
 containerd为什么会有上面这种架构演进？<br>
 CRI是k8s为了解决对接各种Runtime提出的规范，k8s是大佬，想要一起玩耍的Runtime就要实现CRI的定义。
@@ -92,7 +92,7 @@ CRI是k8s为了解决对接各种Runtime提出的规范，k8s是大佬，想要�
 
 ### containerd ---> runC/kata
 
- ![shimv2](pics/shim_v2.png) 
+ ![shimv2](../pics/shim_v2.png) 
 
 ##### containerd-shimv2[[5]]
 
@@ -124,7 +124,7 @@ containerd-shim-*-v2是server端，根据不同的runtime：
 
 ## 组件间gRPC调用总结
 
- ![grpc](pics/grpc-process.jpg)
+ ![grpc](../pics/grpc-process.jpg)
   
 
 [1]: https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r
