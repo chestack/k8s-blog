@@ -150,6 +150,8 @@ static int __netif_receive_skb_core(struct sk_buff *skb, bool pfmemalloc)
 
 具体怎么调整呢, 我没有实践经验，可参照 [Linux 网络栈接收数据（RX）：配置调优](https://mp.weixin.qq.com/s/iDlngjHZ0oA9KgA0WoX36Q)
 
+[Linux 网络调优：内核网络栈参数篇](https://www.starduster.me/2020/03/02/linux-network-tuning-kernel-parameter/)
+
 [1]: https://zhuanlan.zhihu.com/p/256428917
 [2]: https://medium.com/coccoc-engineering-blog/linux-network-ring-buffers-cea7ead0b8e8
 [3]: https://ylgrgyq.github.io/2017/07/23/linux-receive-packet-1

@@ -11,6 +11,23 @@
 
 所谓"基础"是指浅尝辄止了, 笔者水平无法支撑深入Deep Dive
 
+### 七层协议顶个球
+
+这是个找校友的标题, 言归正传 这里是介绍网络通信的分层逻辑, 每层都解决啥问题。
+
+推荐一片博文 [如果让你来设计网络][12], 真 深入浅出、清晰易懂！
+
+关于网络通信分层的核心, 粗浅总结: 二层转发; 三层路由; 四层传输控制; 七层看header. (显然, 四层和七层是没理解但强行凑数的)
+
+二/三层的一些关键点的理解:
+- FDB表, 也是一些文章里提的MAC表, 交换机的核心表项, 记录mac地址、vlan、端口, 解决交换机二层转发时 知道这个包转发到哪个端口出去。 
+- FDB延伸引出交换机的两个核心功能: learn、flood. 简单说，learn就是根据收到的包 记录生成FDB表；flood就是如果FDB表里没有记录 懵逼的时候要广播问问 [[13]]
+- FDB表本身是交换机上需要的, 云环境下网络越来越复杂, host上的linux bridge就是一个交换机, 也需要FDB表
+
+
+- ARP表, ARP是知道ip找mac, 所以逻辑上是个三层路由需要的表. 所以理解了**二层转发 三层路由** 也就很容易理解 FDB和ARP的区别.
+
+
 ### 虚拟设备 [[7]]
 
 下图是单节点，虚机(tap)、容器(veth)连接拓扑图
@@ -78,3 +95,5 @@
 [9]: https://github.com/containernetworking/plugins/tree/master/plugins/main/macvlan
 [10]: https://linuxnatives.net/2012/virtualized-bridged-networking-with-macvtap
 [11]: https://developers.redhat.com/blog/2019/05/17/an-introduction-to-linux-virtual-interfaces-tunnels#
+[12]: https://mp.weixin.qq.com/s?__biz=Mzk0MjE3NDE0Ng==&mid=2247489907&idx=1&sn=a296cb42467cab6f0a7847be32f52dae&chksm=c2c663def5b1eac84b664c8c1cadf1c8ec23ea2e57e48e04add9b833c841256fc9449b62c0ec&cur_album_id=1700901576128643073&scene=189#wechat_redirect
+[13]: https://everfind.github.io/courses/network/host-switch-host.html#%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9A%84%E5%8A%9F%E8%83%BD

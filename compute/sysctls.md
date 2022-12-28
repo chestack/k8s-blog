@@ -43,6 +43,8 @@
       value: 4096 655350 655350
 ```
 
+更多网络相关的内核参数介绍 [linux 网络内核参数](https://www.starduster.me/2020/03/02/linux-network-tuning-kernel-parameter/)
+
 
 ### 参考连接
 
