@@ -65,7 +65,8 @@ google相关内容不多, 而且资料内容基本都是intel在峰会上的介�
   - 应用本身做dpdk改造, 可以理解为基于一些 userspace TCP/IP stack 如[ANS](https://github.com/ansyun/dpdk-ans), 应用自己实现处理数据的逻辑，如 nginx-dpdk、redis-dpdk
 
 ### ovn/ovs 定位调试问题
-TODO
+
+参照 [ovn/ovs 常用命令](./ovn-cheat-sheet.md)
 
 [1]: https://arthurchiao.art/blog/ovs-deep-dive-0-overview/
 [2]: https://easystack.atlassian.net/browse/EAS-93036
