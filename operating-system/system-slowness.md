@@ -15,7 +15,7 @@
 
 ### load average
 - what is load average really means? 参考 [brendan gregg 的blog] [1]
-  - 结论: load average 的值就是 R状态 + D状态的 task数量和
+  - 结论: load average 的值就是 R状态 + D状态的 task数量和 [Linux 中的负载高低和 CPU 开销并不完全对应](https://mp.weixin.qq.com/s/1Pl4tT_Nq-fEZrtRpILiig)
   - 过程: brendan 对这个问题也比较懵逼(mystery), 通过翻源码 [kernel/sched/loadavg.c] [2] + POC, 搞清楚了这个问题. 
   - 背景: In 1993, a Linux engineer found a nonintuitive case with load averages, and with a three-line patch changed them forever from "CPU load averages" to what one might call "system load averages."  
 
