@@ -48,6 +48,11 @@
 - [`kube-apiserver pprof 性能分析`](kubernetes/kube-apiserver-pprof.md)
 - [`kube-apiserver 简述`](kubernetes/kube-apiserver.md)
 
+## Operating System
+- [`Linux系统启动过程`](operating-system/linux-startup.md)
+- [`进程问题 -- D vs. Z vs. orphan`](operating-system/process.md)
+- [`system-slowness`](operating-system/system-slowness.md)
+
 ## 计算
 - [`docker/basic`](docker/basic)
 - [`CRI调用机制`](compute/ContainerRuntime.md)
@@ -58,10 +63,6 @@
 ## etcd
 - [`etcd/存储`](etcd/storage.md)
 - [`etcd/断网恢复重新加入集群`](etcd/rejoin.md)
-
-## Operating System
-- [`进程问题 -- D vs. Z vs. orphan`](operating-system/process.md)
-- [`system-slowness`](operating-system/system-slowness.md)
 
 ## k8s 安装部署升级
 - [`deployment tools`](cluster-lifecycle)
