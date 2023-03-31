@@ -28,6 +28,7 @@
 ### 公有云厂商方案调研
 
 - [阿里Terway设计文档](https://github.com/AliyunContainerService/terway/blob/main/docs/design.md) **首推这个Terway的设计文档, 因为是设计文档不是产品介绍文档, 所以细节介绍的更清晰, 更好理解, 且有代码辅助**
+  - terway作者 深入介绍terway(内含ppt下载方式) [[5]]
   - VPC, Pod网段不同于节点的网络的网段，通过Aliyun VPC路由表打通不同节点间的容器网络。
   - ENI, 容器的网卡是Aliyun弹性网卡，Pod的网段和宿主机的网段是一致的。
   - ENI多IP, 一个Aliyun弹性网卡可以配置多个辅助VPC的IP地址，将这些辅助IP地址映射和分配到Pod中，这种Pod的网段和宿主机网段也是一致的。
@@ -46,8 +47,12 @@
   
   [Learning how AWS implement AWS VPC CNI](https://www.slideshare.net/hongweiqiu/learning-how-aws-implement-aws-vpc-cni)
 
-
 - [网易Kubernetes网络方案][4]
+
+
+- 民间大拿blog
+  - http://www.iceyao.com.cn/post/2020-05-12-k8s_network_with_openstack_2/
+  - https://juejin.cn/post/6844903801057443853
 
 ### ES vpc-cni 思路/方案
 
@@ -74,3 +79,4 @@
 [2]: https://github.com/tencentyun/qcloud-documents/blob/master/product/%E8%AE%A1%E7%AE%97%E4%B8%8E%E7%BD%91%E7%BB%9C/%E5%AE%B9%E5%99%A8%E6%9C%8D%E5%8A%A1/%E6%8E%A7%E5%88%B6%E5%8F%B0%E6%8C%87%E5%8D%97%EF%BC%88%E6%96%B0%E7%89%88%EF%BC%89/%E7%BD%91%E7%BB%9C%E7%AE%A1%E7%90%86/%E5%AE%B9%E5%99%A8%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0.md
 [3]: https://github.com/huaweicloudDocs/cce/blob/master/cn.zh-cn/%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97/%E5%AE%B9%E5%99%A8%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94.md
 [4]: https://sq.sf.163.com/blog/article/223878660638527488?hmsr=toutiao.io&utm_campaign=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
+[5]: https://developer.aliyun.com/article/755848?spm=a2c6h.12873639.article-detail.10.5d3424adfdhEI8
