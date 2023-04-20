@@ -47,6 +47,12 @@
   
   [Learning how AWS implement AWS VPC CNI](https://www.slideshare.net/hongweiqiu/learning-how-aws-implement-aws-vpc-cni)
 
+
+- Lyft, [cni-ipvlan-vpc-k8s](https://github.com/lyft/cni-ipvlan-vpc-k8s)
+  
+  [Announcing cni-ipvlan-vpc-k8s: IPvlan overlay-free Kubernetes Networking in AWS](https://eng.lyft.com/announcing-cni-ipvlan-vpc-k8s-ipvlan-overlay-free-kubernetes-networking-in-aws-95191201476e)
+
+
 - [网易Kubernetes网络方案][4]
 
 
