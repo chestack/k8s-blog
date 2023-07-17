@@ -17,6 +17,7 @@
 ovs通过流表规则处理包的转发, 和linux TCP/IP协议栈的L2/L3转发是不同路径, 那就会有下面的疑问
 
 - 问题: 网卡收到包经过驱动代码处理完之后, 怎么判断是送达tcp/ip协议栈处理 还是 经过ovs 的datapath 处理呢？
+  ![ovs-tcp](../pics/ovs_tcp.png)
 - 回答: br-pub下联的物理网卡因为是ovs纳管的，所以包经过物理网卡之后 ovs有hook可以判断是走ovs流表 还是 host tcp/ip, 判断依据就是目的地址是否是 internal port
 - [deep dive internal port](https://arthurchiao.art/blog/ovs-deep-dive-6-internal-port/), 简单理解 ovs bridge上的 internal port 可以配置ip，作为ovs以外的access port
 - internal port 相比veth的性能优势, kube-ovn实现internal port, kata不支持internal port [[2]]
