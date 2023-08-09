@@ -120,6 +120,23 @@ static int __netif_receive_skb_core(struct sk_buff *skb, bool pfmemalloc)
     ![netfilter-wiki](../pics/Netfilter-packet-flow.svg)
 
 
+- tc 和 tcpdump哪个先生效
+  
+  ![netfilter-wiki](../pics/tc_and_tcpdump.png)   
+  参照 https://github.com/cilium/cilium/issues/12312
+  
+  cilium环境实测, 在开启了network policy的pod lxc上tcpdump抓包 能抓到, drop 是在后面tc ebpf规则drop掉
+```cgo
+[root@node-3 ~]# tcpdump -i lxc9a3b3e506d8d -nne
+dropped privs to tcpdump
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on lxc9a3b3e506d8d, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+11:21:25.173656 ca:cf:df:5b:5b:fc > a2:69:7d:12:eb:ae, ethertype IPv4 (0x0800), length 74: 172.16.0.47.45518 > 192.168.0.9.80: Flags [S], seq 2855091100, win 64240, options [mss 1460,sackOK,TS val 1938975871 ecr 0,nop,wscale 7], length 0
+11:21:26.203781 ca:cf:df:5b:5b:fc > a2:69:7d:12:eb:ae, ethertype IPv4 (0x0800), length 74: 172.16.0.47.45518 > 192.168.0.9.80: Flags [S], seq 2855091100, win 64240, options [mss 1460,sackOK,TS val 1938976901 ecr 0,nop,wscale 7], length 0
+11:21:28.251784 ca:cf:df:5b:5b:fc > a2:69:7d:12:eb:ae, ethertype IPv4 (0x0800), length 74: 172.16.0.47.45518 > 192.168.0.9.80: Flags [S], seq 2855091100, win 64240, options [mss 1460,sackOK,TS val 1938978949 ecr 0,nop,wscale 7], length 0
+```
+
+
 - xdp/eBPF 在哪里生效
   - 参照上面的图，xdp在 alloc_skb()之前 所以肯定在 ip_rcv() kernel stack 之前
   - 参照[下面的图](https://www.seekret.io/blog/a-gentle-introduction-to-xdp/) 能帮助理解 xdp/eBPF的关系
