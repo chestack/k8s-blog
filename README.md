@@ -12,22 +12,19 @@
 ## 网络
 - [`Linux网络包接收过程`](network/RX.md)
 - [`Linux网络包发送过程`](network/TX.md)
-- [`vpc-cni`](network/vpc-cni.md)  
-- [`ebpf`](network/ebpf.md) 
+- [`网络基本概念`](network/network-basic.md)
 - [`虚机中的网络`](network/network-in-vm.md)
-- [`kube-ovn`](network/kube-ovn.md)
+- [`vpc-cni`](network/vpc-cni.md)
+- [`ebpf`](network/ebpf.md)
+- [`kube-ovn 简介`](network/kube-ovn.md)
 - [`ovs/ovn`](network/ovn.md)
 - [`ovs/ovn 常用命令`](network/ovn-cheat-sheet.md)
 - [`CNI调用机制`](network/CNI.md)
 - [`multus-cni/容器多网卡`](network/multiple-cni.md)
-- [`容器使用SR-IOV网卡`](network/sriov.md)  
-- [`网络基础`](network/network-basic.md)
+- [`容器使用SR-IOV网卡`](network/sriov.md)
 - [`kuryr-kubernetes`](network/kuryr.md)
-- [`cni-comparison`](network/cni-comparison.md)
-- `LoadBalancer (TODO)`
-- `multiple ingress-controller (TODO)`
+- [`cni-comparison`](network/cni-comparison.md)  
 - `coreDNS localdns  (TODO)`
-
 
 ## kata-container
 - [`kata简介`](kata-container/kata-container.md)
@@ -76,7 +73,6 @@
 
 ## 存储
 - `bind mount, mount propagation (TODO)`
-- `rbd intree migrate to ceph csi (TODO)`
 - `CSI 0 to 1 (TODO)`
 
 ## SRE
