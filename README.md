@@ -14,11 +14,19 @@
 - [`Linux网络包发送过程`](network/TX.md)
 - [`网络基本概念`](network/network-basic.md)
 - [`虚机中的网络`](network/network-in-vm.md)
-- [`vpc-cni`](network/vpc-cni.md)
-- [`ebpf`](network/ebpf.md)
+
+  
+- [`vpc-cni 调研`](network/vpc-cni-1.md)
+- [`vpc-cni 方案`](network/vpc-cni-2.md)
+- [`vpc-cni 技术细节`](network/vpc-cni-3.md)
+- [`vpc-cni 之 cilium`](network/cilium.md)
+
+
 - [`kube-ovn 简介`](network/kube-ovn.md)
 - [`ovs/ovn`](network/ovn.md)
 - [`ovs/ovn 常用命令`](network/ovn-cheat-sheet.md)
+
+  
 - [`CNI调用机制`](network/CNI.md)
 - [`multus-cni/容器多网卡`](network/multiple-cni.md)
 - [`容器使用SR-IOV网卡`](network/sriov.md)
@@ -38,6 +46,7 @@
 - [`Linux系统启动过程`](operating-system/linux-startup.md)
 - [`进程问题 -- D vs. Z vs. orphan`](operating-system/process.md)
 - [`system-slowness`](operating-system/system-slowness.md)
+- [`ebpf`](network/ebpf.md)
 
 
 ## kubernetes
