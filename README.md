@@ -18,8 +18,8 @@
   
 - [`vpc-cni 调研`](network/vpc-cni-1.md)
 - [`vpc-cni 方案`](network/vpc-cni-2.md)
-- [`vpc-cni 技术细节`](network/vpc-cni-3.md)
 - [`vpc-cni 之 cilium`](network/cilium.md)
+- [`vpc-cni 技术细节`](network/vpc-cni-3.md)
 
 
 - [`kube-ovn 简介`](network/kube-ovn.md)
