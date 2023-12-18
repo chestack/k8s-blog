@@ -1,6 +1,6 @@
 ## cilium
 
-###IPAM
+### IPAM
 
 cilium的IPAM逻辑还是挺复杂的, 几个关键点
 - operator 分配IP
@@ -11,7 +11,7 @@ cilium的IPAM逻辑还是挺复杂的, 几个关键点
 ![cilium-ipam](../pics/cilium-ipam.png)
 
 
-###DataPath
+### DataPath
 
 datapath, 因为当前实现是通过generic veth, 所以核心包括两块
 - 节点上处理不同数据网卡的 策略路由, 可参照 [`vpc-cni 方案`](./vpc-cni-2.md)中的网络拓扑图.
