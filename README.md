@@ -46,6 +46,7 @@
 - [`Linux系统启动过程`](operating-system/linux-startup.md)
 - [`进程问题 -- D vs. Z vs. orphan`](operating-system/process.md)
 - [`system-slowness`](operating-system/system-slowness.md)
+- [`容器如何设置内核参数`](operating-system/sysctls.md)  
 - [`ebpf`](network/ebpf.md)
 
 
@@ -71,7 +72,6 @@
 ## 计算
 - [`docker/basic`](docker/basic)
 - [`CRI调用机制`](compute/ContainerRuntime.md)
-- [`容器如何设置内核参数`](compute/sysctls.md)
 - `deep drive container image (TODO)`
 - `what is containerd snapshot (TODO)`
 
