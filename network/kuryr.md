@@ -51,7 +51,7 @@
 
 ### kuryr-kubernetes operator 问题
 
-- [`Operator Deep Dive`](../operator.md)
+- [`Operator Deep Dive`](../kubernetes/operator.md)
 
 
 [1]: https://github.com/openshift/cluster-network-operator#configuring-kuryr-kubernetes
