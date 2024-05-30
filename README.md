@@ -29,6 +29,20 @@
 - [`网络基本概念`](network/network-basic.md)
 - `coreDNS localdns  (TODO)`
 
+
+## kubernetes
+- [`kubelet 功能框架`](kubernetes/kubelet/startup.md)
+- [`kube-apiserver crash 故障分析`](kubernetes/kube-apiserver-crash.md)
+- [`kube-apiserver pprof 性能分析`](kubernetes/kube-apiserver-pprof.md)
+- [`operator deep dive`](kubernetes/operator.md)
+- [`kube-apiserver 简述`](kubernetes/kube-apiserver.md)
+- [`docker/basic`](docker/basic)
+- [`CRI调用机制`](compute/ContainerRuntime.md)
+- [`NRI && CDI`]
+- `deep drive container image (TODO)`
+- `containerd deepdive (TODO)`
+
+
 ## kata-container
 - [`kata简介`](kata-container/kata-container.md)
 - [`kata block volume 热插拔`](kata-container/hot-plug.md)
@@ -45,12 +59,9 @@
 - [`ebpf`](network/ebpf.md)
 
 
-## kubernetes
-- [`kubelet 功能框架`](kubernetes/kubelet/startup.md)
-- [`kube-apiserver crash 故障分析`](kubernetes/kube-apiserver-crash.md)
-- [`kube-apiserver pprof 性能分析`](kubernetes/kube-apiserver-pprof.md)
-- [`operator deep dive`](kubernetes/operator.md)  
-- [`kube-apiserver 简述`](kubernetes/kube-apiserver.md)
+## k8s 安装部署升级
+- [`deployment tools`](cluster-lifecycle)
+- `cluster-api (TODO)`
 
 
 ## etcd
@@ -64,24 +75,9 @@
 - `Ambient mesh (TODO)`
 
 
-## 计算
-- [`docker/basic`](docker/basic)
-- [`CRI调用机制`](compute/ContainerRuntime.md)
-- `deep drive container image (TODO)`
-- `what is containerd snapshot (TODO)`
-
-
-## k8s 安装部署升级
-- [`deployment tools`](cluster-lifecycle)
-- `cluster-api (TODO)`
-
 ## 存储
 - `bind mount, mount propagation (TODO)`
 - `CSI 0 to 1 (TODO)`
-
-## SRE
-## golang
-## rust
 
 *********************************
 # 广告位招租
