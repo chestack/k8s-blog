@@ -12,7 +12,6 @@
 ## 网络
 - [`Linux网络包接收过程`](network/RX.md)
 - [`Linux网络包发送过程`](network/TX.md)
-- [`kubernetes service负载不均衡`](network/k8s-svc-lb.md)
 - [`虚机中的网络`](network/network-in-vm.md)
 - [`vpc-cni 调研`](network/vpc-cni-survey.md)
 - [`vpc-cni 方案`](network/vpc-cni-architecture.md)
@@ -27,20 +26,37 @@
 - [`kuryr-kubernetes`](network/kuryr.md)
 - [`cni-comparison`](network/cni-comparison.md)
 - [`网络基本概念`](network/network-basic.md)
-- `coreDNS localdns  (TODO)`
+
+  ### case study
+- [`kubernetes service负载不均衡, 问题排查`](network/k8s-svc-lb.md)
 
 
 ## kubernetes
+- [`kubelet<->CRI<->Runtime 调用机制`](kubernetes/CRI.md)
 - [`kubelet 功能框架`](kubernetes/kubelet/startup.md)
-- [`kube-apiserver crash 故障分析`](kubernetes/kube-apiserver-crash.md)
-- [`kube-apiserver pprof 性能分析`](kubernetes/kube-apiserver-pprof.md)
 - [`operator deep dive`](kubernetes/operator.md)
 - [`kube-apiserver 简述`](kubernetes/kube-apiserver.md)
-- [`docker/basic`](docker/basic)
-- [`CRI调用机制`](compute/ContainerRuntime.md)
-- [`NRI && CDI`]
-- `deep drive container image (TODO)`
-- `containerd deepdive (TODO)`
+
+  ### case study
+- [`kube-apiserver pod crash, 问题排查`](kubernetes/kube-apiserver-crash.md)
+- [`kube-apiserver pod cpu load飙高, pprof问题排查`](kubernetes/kube-apiserver-pprof.md)
+
+
+## containerd
+- [`容器 受限制的进程`](containerd/basic.md)
+- [`containerd存储机制 - snapshot`](containerd/snapshot.md)
+- [`NRI 实践`](containerd/nri.md)
+
+  ### case study
+- [`停掉containerd服务导致容器hang住, 问题排查`](containerd/pipe.md)
+
+
+## etcd
+- [`etcd 存储机制`](etcd/storage.md)
+- [`etcd运维 - 压缩备份`](etcd/maintain.md)
+
+  ### case study
+- [`etcd follower 断网恢复无法重新加入集群, 问题排查`](etcd/rejoin.md)
 
 
 ## kata-container
@@ -56,17 +72,12 @@
 - [`进程问题 -- D vs. Z vs. orphan`](operating-system/process.md)
 - [`system-slowness`](operating-system/system-slowness.md)
 - [`容器如何设置内核参数`](operating-system/sysctls.md)  
-- [`ebpf`](network/ebpf.md)
+- [`ebpf`](operating-system/ebpf.md)
 
 
-## k8s 安装部署升级
+## kubernetes cluster management
 - [`deployment tools`](cluster-lifecycle)
 - `cluster-api (TODO)`
-
-
-## etcd
-- [`etcd/存储`](etcd/storage.md)
-- [`etcd/断网恢复重新加入集群`](etcd/rejoin.md)
 
 
 ## Service Mesh
@@ -74,10 +85,6 @@
 - [`cilium service mesh`](service-mesh/cilium-service-mesh.md)
 - `Ambient mesh (TODO)`
 
-
-## 存储
-- `bind mount, mount propagation (TODO)`
-- `CSI 0 to 1 (TODO)`
 
 *********************************
 # 广告位招租

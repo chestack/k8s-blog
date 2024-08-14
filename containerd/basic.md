@@ -117,7 +117,7 @@ Hello, World
 nsenter 如字面意思，进入namespace<br>
 
 如下图，以环境中heat-engine这个container为例，可以通过nsenter命令进入container，在container里面执行命令可以看到namespace的隔离
-![nsenter](../pics/nsenter.png) 
+![nsenter](pics/nsenter.png) 
 
 上面是指定了 mount uts ipc pid net 这几个namespaces，如果不指定net 指定user, 能看到host上的所有网络设备，container中的用户是指定的userid
-![nsenter2](../pics/nsenter2.png) 
+![nsenter2](pics/nsenter2.png) 
