@@ -64,7 +64,7 @@ kubectl get pods -n 75de16c57d5e48da9467de5f9dedcc16
 [4]: https://github.com/kubernetes-client/python/issues/868
 [5]: https://juejin.cn/post/6844903593519251464
 [6]: https://developer.aliyun.com/article/680204
-[7]: https://openkruise.io/en-us/blog/blog2.html
+[7]: https://github.com/kubernetes-sigs/controller-runtime/issues/616
 [8]: https://github.com/operator-framework/operator-sdk/issues/1938
 [9]: https://github.com/kubernetes-sigs/kubebuilder/pull/228
 [10]: https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers
