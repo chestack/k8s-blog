@@ -75,15 +75,18 @@
 - [`ebpf`](operating-system/ebpf.md)
 
 
-## kubernetes cluster management
-- [`deployment tools`](cluster-lifecycle)
-- `cluster-api (TODO)`
-
-
 ## Service Mesh
 - [`merbridge`](service-mesh/merbridge.md)
 - [`cilium service mesh`](service-mesh/cilium-service-mesh.md)
 - `Ambient mesh (TODO)`
+
+
+## Coding
+- [`golang CGO_ENABLED=0和静态编译 是一回事吗`](coding/golang-build.md)
+
+
+## kubernetes cluster management
+- [`deployment tools`](cluster-lifecycle/README.md)
 
 
 *********************************
