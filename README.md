@@ -17,6 +17,7 @@
 - [`vpc-cni 方案`](network/vpc-cni-architecture.md)
 - [`vpc-cni powered by cilium`](network/vpc-cni-cilium.md)
 - [`vpc-cni 技术细节`](network/vpc-cni-details.md)
+- [`iptables+nftables 混用引发的问题`](network/iptables-nftables.md)
 - [`kube-ovn 简介`](network/kube-ovn.md)
 - [`ovs/ovn`](network/ovn.md)
 - [`ovs/ovn 常用命令`](network/ovn-cheat-sheet.md)
